@@ -4,7 +4,7 @@
     {
         public void Log()
         {
-            Console.WriteLine("DatabaseeLoglandı");
+            Console.WriteLine("Database Logged");
         }
     }
 }

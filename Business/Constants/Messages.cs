@@ -13,15 +13,15 @@ namespace Business.Constants
     {
         public static string TaskAdded = "Task Added";
         public static string TaskTitleInvalid = "Task Title Invalid";
-        public static string MaintenanceTime="bakım";
-        public static string TasksListed="taskslisted";
-        public static string TaskNameAlreadyExists="Bu başlık zaten kullanılıyor";
-        public static string  AuthorizationDenied="yetkinyok";
-        public static string UserRegistered="kayıt oldu  ";
-        public static string UserNotFound = " kullanıcı bulunamdaı ";
-        public static string PasswordError = " parola hatası";
-        public static string SuccessfulLogin = " başarılı giriş ";
-        public static string UserAlreadyExists = " kullanıcı mevcut ";
-        public static string AccessTokenCreated = " token oluşturuldu ";
+        public static string MaintenanceTime = "Maintenance";
+        public static string TasksListed = "Tasks Listed";
+        public static string TaskNameAlreadyExists = "This Title is already in use ";
+        public static string AuthorizationDenied = "You are not Authorized";
+        public static string UserRegistered = "Registered  ";
+        public static string UserNotFound = " User not found  ";
+        public static string PasswordError = " Password Error";
+        public static string SuccessfulLogin = "Successful Login ";
+        public static string UserAlreadyExists = " User available  ";
+        public static string AccessTokenCreated = " Token Created ";
     }
 }

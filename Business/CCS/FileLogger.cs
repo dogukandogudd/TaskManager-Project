@@ -10,7 +10,7 @@ namespace Business.CCS
     {
         public void Log()
         {
-            Console.WriteLine("DosyayaLoglandı");
+            Console.WriteLine("File Loged");
         }
     }
 }

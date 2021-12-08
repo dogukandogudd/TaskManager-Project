@@ -20,7 +20,7 @@ namespace WebAPI.Controllers
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
-            //Thread.Sleep(1000);
+            Thread.Sleep(1000);
             var result =_taskService.GetAll();
             if (result.Success)
             {
@@ -45,6 +45,7 @@ namespace WebAPI.Controllers
         [HttpGet("getbylocation")]
         public IActionResult GetAllByLocation(int LocationId)
         {
+            Thread.Sleep(1000);
             var result = _taskService.GetAllByLocation(LocationId);
             if (result.Success)
             {
@@ -56,6 +57,7 @@ namespace WebAPI.Controllers
         [HttpGet("getbystatus")]
         public IActionResult GetAllByStatus(int StatusId)
         {
+            Thread.Sleep(1000);
             var result = _taskService.GetAllByStatus(StatusId);
             if (result.Success)
             {
@@ -75,23 +77,23 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpPost("update")]
-        public IActionResult Update(Entities.Concrete.Task tasks)
-        {
-            var result = _taskService.Update(tasks);
-            if (result.Success) return Ok(result);
+        //[HttpPost("update")]
+        //public IActionResult Update(Entities.Concrete.Task tasks)
+        //{
+        //    var result = _taskService.Update(tasks);
+        //    if (result.Success) return Ok(result);
 
-            return BadRequest(result);
-        }
+        //    return BadRequest(result);
+        //}
 
-        [HttpPost("delete")]
-        public IActionResult Delete(Entities.Concrete.Task tasks)
-        {
-            var result = _taskService.Delete(tasks);
-            if (result.Success) return Ok(result);
+        //[HttpPost("delete")]
+        //public IActionResult Delete(Entities.Concrete.Task tasks)
+        //{
+        //    var result = _taskService.Delete(tasks);
+        //    if (result.Success) return Ok(result);
 
-            return BadRequest(result);
-        }
+        //    return BadRequest(result);
+        //}
 
 
 

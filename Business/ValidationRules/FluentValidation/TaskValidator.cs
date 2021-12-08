@@ -14,7 +14,6 @@ namespace Business.ValidationRules.FluentValidation
         {
             RuleFor(t => t.TaskTitle).NotEmpty();
             RuleFor(t=>t.TaskTitle).MinimumLength(3);
-            //buraya bi bak
             //RuleFor(t => t.TaskDescription).Must(StartWithNumber).WithMessage("sayı ile başlama");
         }
 

@@ -29,7 +29,6 @@ namespace Business.Concrete
         }
         public IDataResult<List<Entities.Concrete.Task>> GetAll()
         {
-            //Bussines Code
             if (DateTime.Now.Hour == 23)
             {
                 return new ErrorDataResult<List<Entities.Concrete.Task>>(Messages.MaintenanceTime);
@@ -46,8 +45,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Entities.Concrete.Task>>(_taskDal.GetAll(t => t.StatusId == StatusId));
         }
 
-        //[SecuredOperation("task.add,admin")]
-        //[ValidationAspect(typeof(TaskValidator))]
+        
         public IResult Add(Entities.Concrete.Task task)
         {
             
@@ -61,10 +59,7 @@ namespace Business.Concrete
 
         }
 
-        //public IResult Update(Tasks task)
-        //{
-            
-        //}
+
       
         public IDataResult<Entities.Concrete.Task> GetById(int TaskId)
         {
@@ -75,7 +70,7 @@ namespace Business.Concrete
         IResult ITaskService.Update(Entities.Concrete.Task task)
         {
             _taskDal.Update(task);
-            return new SuccessResult("günceleldni");
+            return new SuccessResult("Uptaded");
         }
         private IResult CheckIfTaskTitleExists(string TaskTitle)
         {
@@ -90,7 +85,7 @@ namespace Business.Concrete
         IResult ITaskService.Delete(Entities.Concrete.Task task)
         {
             _taskDal.Delete(task);
-            return new SuccessResult("silindi");
+            return new SuccessResult("Deleted");
         }
 
      

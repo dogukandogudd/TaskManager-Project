@@ -18,8 +18,6 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Entities.Concrete.Task> Task { get; set; }
         public DbSet<Status> Status { get; set; }
         public DbSet<Location> Location { get; set; }
-        public DbSet<OperationClaim> OperationClaims { get; set; }
-        public DbSet<User> Users { get; set; }
-        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+       
     }
 }

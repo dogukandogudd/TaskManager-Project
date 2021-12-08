@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Status>> GetAll()
         {
-            return new SuccessDataResult<List<Status>>(_statusDal.GetAll(), "durumlar listelendi");
+            return new SuccessDataResult<List<Status>>(_statusDal.GetAll(), "Status Listed");
         }
 
         public IDataResult<Status> GetById(int StatusId)

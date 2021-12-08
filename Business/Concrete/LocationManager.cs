@@ -30,7 +30,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Location>> GetAll()
         {
-            return new SuccessDataResult<List<Location>>(_locationDal.GetAll(),"lokasyonlar listelendi");
+            return new SuccessDataResult<List<Location>>(_locationDal.GetAll(),"Locations Listed");
         }
 
         public IDataResult<Location> GetById(int LocationId)
